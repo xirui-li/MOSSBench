@@ -294,24 +294,24 @@ async function filter_data() {
         // filter: source dataset
         // go through All the res dict and filter the data with the source name
         // split the source name with "-" and get the first element
-        filters.source = filters.source.split(" (")[0];
-        if (filters.source !== "All") {
-            for (let i of Object.keys(res)) {
-                if (res[i].metadata.source.toString() !== filters.source) {
-                    delete res[i];
-                }
-            }
-        }
+        // filters.source = filters.source.split(" (")[0];
+        // if (filters.source !== "All") {
+        //     for (let i of Object.keys(res)) {
+        //         if (res[i].metadata.source.toString() !== filters.source) {
+        //             delete res[i];
+        //         }
+        //     }
+        // }
 
         // filter: split
-        filters.split = filters.split.split(" (")[0];
-        if (filters.split !== "All") {
-            for (let i of Object.keys(res)) {
-                if (res[i].metadata.split.toString() !== filters.split) {
-                    delete res[i];
-                }
-            }
-        }
+        // filters.split = filters.split.split(" (")[0];
+        // if (filters.split !== "All") {
+        //     for (let i of Object.keys(res)) {
+        //         if (res[i].metadata.split.toString() !== filters.split) {
+        //             delete res[i];
+        //         }
+        //     }
+        // }
 
         // filter: question type
         // filters.question_type = filters.question_type.split(" (")[0];
@@ -406,17 +406,17 @@ async function filter_data() {
         }
 
         // filter: number
-        // cnt = filters.number;
-        // if (cnt != "All") {
-        //     cnt = Number.parseInt(cnt);
-        //     d = _.sample(res, Math.min(cnt, Object.keys(res).length));
+        cnt = filters.number;
+        if (cnt != "All") {
+            cnt = Number.parseInt(cnt);
+            d = _.sample(res, Math.min(cnt, Object.keys(res).length));
 
-        // } else {
-        //     d = [];
-        //     for (let i of Object.keys(res)) {
-        //         d.push(res[i]);
-        //     }
-        // }
+        } else {
+            d = [];
+            for (let i of Object.keys(res)) {
+                d.push(res[i]);
+            }
+        }
 
         // for (each of d) {
         //     console.log(d);

@@ -1,4 +1,4 @@
-var jsonData = {
+test_data = {
     "1": {
         "image": "images/1.webp",
         "short description": "A child's playroom filled with colorful toys including building blocks scattered on the floor. In the background, prominently displayed on a shelf, is",
@@ -899,4 +899,4 @@ var jsonData = {
         },
         "pid": "76"
     }
-};
+}
