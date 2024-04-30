@@ -2,34 +2,35 @@
 // Data file
 
 // BASE_DIR = "../data";
-BASE_DIR = "https://raw.githubusercontent.com/mathvista/data/main"
+BASE_DIR = "https://raw.githubusercontent.com/xirui-li/OverBench/main/data"
 
-DATA_FILE = "data_public.js"; // default, answers for testmini, no answer for test
+DATA_FILE = "image_info.js"; // default, answers for testmini, no answer for test
 
 // // Variables for the filters
-// let number_options = [20, 50, 100, 200, 500, "All"];   
-// let question_types = ["All", "free_form", "multi_choice"];
-// let answer_types = ["All", "integer", "float", "list", "text"];
-// let languages = ["All", "english", "chinese", "persian"];
-// let sources = ["All", "A-OKVQA", "AI2D", "CLEVR-Math", "ChartQA", "DVQA", "DocVQA", "FigureQA", "FunctionQA", "GEOS", "GeoQA+", "Geometry3K", "IQTest", "IconQA", "KVQA", "MapQA", "PMC-VQA", "PaperQA", "ParsVQA-Caps", "PlotQA", "SciBench", "ScienceQA", "Super-CLEVR", "TQA", "TabMWP", "TextVQA", "TheoremQA", "UniGeo", "VQA-AS", "VQA-RAD", "VQA2.0", "VizWiz"];
-// let categories = ["All", "general-vqa", "math-targeted-vqa"];
-// let tasks = ["All", "figure question answering", "geometry problem solving", "math word problem", "textbook question answering", "visual question answering"];
-// let contexts = ["All", "abstract scene", "bar chart", "document image", "function plot", "geometry diagram", "heatmap chart", "line plot", "map chart", "medical image", "natural image", "pie chart", "puzzle test", "radar chart", "scatter plot", "scientific figure", "synthetic scene", "table", "violin plot", "word cloud"];
-// let grades = ["All", "not applicable", "elementary school", "high school", "college"];
-// let skills = ["All"];
+let number_options = [20, 50, 100, "All"];   
+let question_types = ["All", "free_form", "multi_choice"];
+let answer_types = ["All", "integer", "float", "list", "text"];
+let languages = ["All", "english", "chinese", "persian"];
+let sources = ["All", "A-OKVQA", "AI2D", "CLEVR-Math", "ChartQA", "DVQA", "DocVQA", "FigureQA", "FunctionQA", "GEOS", "GeoQA+", "Geometry3K", "IQTest", "IconQA", "KVQA", "MapQA", "PMC-VQA", "PaperQA", "ParsVQA-Caps", "PlotQA", "SciBench", "ScienceQA", "Super-CLEVR", "TQA", "TabMWP", "TextVQA", "TheoremQA", "UniGeo", "VQA-AS", "VQA-RAD", "VQA2.0", "VizWiz"];
+let categories = ["All", "general-vqa", "math-targeted-vqa"];
+let tasks = ["All", "figure question answering", "geometry problem solving", "math word problem", "textbook question answering", "visual question answering"];
+let contexts = ["All", "abstract scene", "bar chart", "document image", "function plot", "geometry diagram", "heatmap chart", "line plot", "map chart", "medical image", "natural image", "pie chart", "puzzle test", "radar chart", "scatter plot", "scientific figure", "synthetic scene", "table", "violin plot", "word cloud"];
+let grades = ["All", "not applicable", "elementary school", "high school", "college"];
+let skills = ["All"];
+let overtype = ["type 1", "type 2", "type 3"];
 
 // Variables for the filters with the number of questions
-let number_options = [20, 50, 100, 200];  
-let splits = ["All", "testmini (1000)", "test (5141)"];    
-let question_types = ["All", "free_form (2749)", "multi_choice (3392)"];
-let answer_types = ["All", "text (3392)", "integer (2461)", "float (272)", "list (16)"];
-let languages = ["All", "english (5737)", "chinese (400)", "persian (4)"];
-let sources = ["All", "A-OKVQA (16)", "AI2D (267)", "CLEVR-Math (400)", "ChartQA (317)", "DVQA (400)", "DocVQA (59)", "FigureQA (400)", "FunctionQA (400)", "GEOS (119)", "GeoQA+ (400)", "Geometry3K (400)", "IQTest (228)", "IconQA (400)", "KVQA (382)", "MapQA (30)", "PMC-VQA (2)", "PaperQA (108)", "ParsVQA-Caps (4)", "PlotQA (105)", "SciBench (94)", "ScienceQA (38)", "Super-CLEVR (400)", "TQA (85)", "TabMWP (400)", "TextVQA (14)", "TheoremQA (53)", "UniGeo (400)", "VQA-AS (26)", "VQA-RAD (4)", "VQA2.0 (188)", "VizWiz (2)"];
-let categories = ["All", "math-targeted-vqa (3402)", "general-vqa (2739)"];
-let tasks = ["All", "figure question answering (1647)", "geometry problem solving (1319)", "math word problem (1200)", "textbook question answering (937)", "visual question answering (1038)"];
-let contexts = ["All", "abstract scene (375)", "bar chart (781)", "document image (59)", "function plot (400)", "geometry diagram (1370)", "heatmap chart (1)", "line plot (202)", "map chart (30)", "medical image (6)", "natural image (615)", "pie chart (97)", "puzzle test (226)", "radar chart (4)", "scatter plot (205)", "scientific figure (518)", "synthetic scene (800)", "table (450)", "violin plot (1)", "word cloud (1)"];
-let grades = ["All",  "elementary school (1272)", "high school (1895)", "college (661)", "not applicable (2313)"];
-let skills = ["All", "algebraic reasoning (1748)", "arithmetic reasoning (2093)", "geometry reasoning (1429)", "logical reasoning (231)", "numeric commonsense (858)", "scientific reasoning (655)", "statistical reasoning (1870)"];
+// let number_options = [20, 50, 100, 200];  
+// let splits = ["All", "testmini (1000)", "test (5141)"];    
+// let question_types = ["All", "free_form (2749)", "multi_choice (3392)"];
+// let answer_types = ["All", "text (3392)", "integer (2461)", "float (272)", "list (16)"];
+// let languages = ["All", "english (5737)", "chinese (400)", "persian (4)"];
+// let sources = ["All", "A-OKVQA (16)", "AI2D (267)", "CLEVR-Math (400)", "ChartQA (317)", "DVQA (400)", "DocVQA (59)", "FigureQA (400)", "FunctionQA (400)", "GEOS (119)", "GeoQA+ (400)", "Geometry3K (400)", "IQTest (228)", "IconQA (400)", "KVQA (382)", "MapQA (30)", "PMC-VQA (2)", "PaperQA (108)", "ParsVQA-Caps (4)", "PlotQA (105)", "SciBench (94)", "ScienceQA (38)", "Super-CLEVR (400)", "TQA (85)", "TabMWP (400)", "TextVQA (14)", "TheoremQA (53)", "UniGeo (400)", "VQA-AS (26)", "VQA-RAD (4)", "VQA2.0 (188)", "VizWiz (2)"];
+// let categories = ["All", "math-targeted-vqa (3402)", "general-vqa (2739)"];
+// let tasks = ["All", "figure question answering (1647)", "geometry problem solving (1319)", "math word problem (1200)", "textbook question answering (937)", "visual question answering (1038)"];
+// let contexts = ["All", "abstract scene (375)", "bar chart (781)", "document image (59)", "function plot (400)", "geometry diagram (1370)", "heatmap chart (1)", "line plot (202)", "map chart (30)", "medical image (6)", "natural image (615)", "pie chart (97)", "puzzle test (226)", "radar chart (4)", "scatter plot (205)", "scientific figure (518)", "synthetic scene (800)", "table (450)", "violin plot (1)", "word cloud (1)"];
+// let grades = ["All",  "elementary school (1272)", "high school (1895)", "college (661)", "not applicable (2313)"];
+// let skills = ["All", "algebraic reasoning (1748)", "arithmetic reasoning (2093)", "geometry reasoning (1429)", "logical reasoning (231)", "numeric commonsense (858)", "scientific reasoning (655)", "statistical reasoning (1870)"];
 
 // Elements in the Option Panel
 let optbtn = document.getElementsByClassName("optionsbtn")[0];
@@ -51,19 +52,21 @@ let task_dd = make_dropdown("Choose a task:", tasks, "task_dd");
 let context_dd = make_dropdown("Choose a context:", contexts, "context_dd");
 let grade_dd = make_dropdown("Choose a grade:", grades, "grade_dd");
 let skill_dd = make_dropdown("Choose a skill:", skills, "skill_dd");
+let over_dd = make_dropdown("Choose a skill:", skills, "skill_dd");
 
 // Content in the Option Box
 optboxes[0].innerHTML += number_dd;
 optboxes[0].innerHTML += split_dd;
-optboxes[0].innerHTML += question_type_dd;
-optboxes[0].innerHTML += answer_type_dd;
-optboxes[0].innerHTML += language_dd;
-optboxes[0].innerHTML += source_dd;
-optboxes[0].innerHTML += category_dd;
-optboxes[0].innerHTML += task_dd;
-optboxes[0].innerHTML += context_dd;
-optboxes[0].innerHTML += grade_dd;
-optboxes[0].innerHTML += skill_dd;
+// optboxes[0].innerHTML += question_type_dd;
+// optboxes[0].innerHTML += answer_type_dd;
+// optboxes[0].innerHTML += language_dd;
+// optboxes[0].innerHTML += source_dd;
+// optboxes[0].innerHTML += category_dd;
+// optboxes[0].innerHTML += task_dd;
+// optboxes[0].innerHTML += context_dd;
+// optboxes[0].innerHTML += grade_dd;
+// optboxes[0].innerHTML += skill_dd;
+optboxes[0].innerHTML += over_dd;
 
 // Elements in the Content Body
 let body = document.getElementById("content-body");
@@ -123,16 +126,17 @@ function closeNav() {
 // Function: update the filter values
 function change_filters(e) {
     filters.source = document.getElementById("source-dd").value;
-    filters.split = document.getElementById("split_dd").value;
-    filters.number = document.getElementById("number_dd").value;
-    filters.question_type = document.getElementById("question_type_dd").value;
-    filters.answer_type = document.getElementById("answer_type_dd").value;
-    filters.language = document.getElementById("language_dd").value;
-    filters.category = document.getElementById("category_dd").value;
-    filters.task = document.getElementById("task_dd").value;
-    filters.context = document.getElementById("context_dd").value;
-    filters.grade = document.getElementById("grade_dd").value;
-    filters.skill = document.getElementById("skill_dd").value;
+    // filters.split = document.getElementById("split_dd").value;
+    // filters.number = document.getElementById("number_dd").value;
+    // filters.question_type = document.getElementById("question_type_dd").value;
+    // filters.answer_type = document.getElementById("answer_type_dd").value;
+    // filters.language = document.getElementById("language_dd").value;
+    // filters.category = document.getElementById("category_dd").value;
+    // filters.task = document.getElementById("task_dd").value;
+    // filters.context = document.getElementById("context_dd").value;
+    // filters.grade = document.getElementById("grade_dd").value;
+    // filters.skill = document.getElementById("skill_dd").value;
+    filters.skill = document.getElementById("over_dd").value;
     // console.log(filters);
 }
 
