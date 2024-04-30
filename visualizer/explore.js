@@ -136,7 +136,7 @@ function change_filters(e) {
     // filters.context = document.getElementById("context_dd").value;
     // filters.grade = document.getElementById("grade_dd").value;
     // filters.skill = document.getElementById("skill_dd").value;
-    filters.skill = document.getElementById("over_dd").value;
+    filters.over = document.getElementById("over_dd").value;
     // console.log(filters);
 }
 
@@ -314,81 +314,92 @@ async function filter_data() {
         }
 
         // filter: question type
-        filters.question_type = filters.question_type.split(" (")[0];
-        if (filters.question_type !== "All") {
-            for (let i of Object.keys(res)) {
-                if (res[i].question_type.toString() !== filters.question_type) {
-                    delete res[i];
-                }
-            }
-        }
+        // filters.question_type = filters.question_type.split(" (")[0];
+        // if (filters.question_type !== "All") {
+        //     for (let i of Object.keys(res)) {
+        //         if (res[i].question_type.toString() !== filters.question_type) {
+        //             delete res[i];
+        //         }
+        //     }
+        // }
 
         // filter: answer type
-        filters.answer_type = filters.answer_type.split(" (")[0];
-        if (filters.answer_type !== "All") {
-            for (let i of Object.keys(res)) {
-                if (res[i].answer_type.toString() !== filters.answer_type) {
-                    delete res[i];
-                }
-            }
-        }
+        // filters.answer_type = filters.answer_type.split(" (")[0];
+        // if (filters.answer_type !== "All") {
+        //     for (let i of Object.keys(res)) {
+        //         if (res[i].answer_type.toString() !== filters.answer_type) {
+        //             delete res[i];
+        //         }
+        //     }
+        // }
 
         // filter: language
-        filters.language = filters.language.split(" (")[0];
-        if (filters.language !== "All") {
-            for (let i of Object.keys(res)) {
-                if (res[i].metadata.language.toString() !== filters.language) {
-                    delete res[i];
-                }
-            }
-        }
+        // filters.language = filters.language.split(" (")[0];
+        // if (filters.language !== "All") {
+        //     for (let i of Object.keys(res)) {
+        //         if (res[i].metadata.language.toString() !== filters.language) {
+        //             delete res[i];
+        //         }
+        //     }
+        // }
 
         // filter: category
-        filters.category = filters.category.split(" (")[0];
-        if (filters.category !== "All") {
-            for (let i of Object.keys(res)) {
-                if (res[i].metadata.category.toString() !== filters.category) {
-                    delete res[i];
-                }
-            }
-        }
+        // filters.category = filters.category.split(" (")[0];
+        // if (filters.category !== "All") {
+        //     for (let i of Object.keys(res)) {
+        //         if (res[i].metadata.category.toString() !== filters.category) {
+        //             delete res[i];
+        //         }
+        //     }
+        // }
     
         // filter: task
-        filters.task = filters.task.split(" (")[0];
-        if (filters.task !== "All") {
-            for (let i of Object.keys(res)) {
-                if (res[i].metadata.task.toString() !== filters.task) {
-                    delete res[i];
-                }
-            }
-        }
+        // filters.task = filters.task.split(" (")[0];
+        // if (filters.task !== "All") {
+        //     for (let i of Object.keys(res)) {
+        //         if (res[i].metadata.task.toString() !== filters.task) {
+        //             delete res[i];
+        //         }
+        //     }
+        // }
 
         // filter: context
-        filters.context = filters.context.split(" (")[0];
-        if (filters.context !== "All") {
-            for (let i of Object.keys(res)) {
-                if (res[i].metadata.context.toString() !== filters.context) {
-                    delete res[i];
-                }
-            }
-        }
+        // filters.context = filters.context.split(" (")[0];
+        // if (filters.context !== "All") {
+        //     for (let i of Object.keys(res)) {
+        //         if (res[i].metadata.context.toString() !== filters.context) {
+        //             delete res[i];
+        //         }
+        //     }
+        // }
 
         // filter: grade
-        filters.grade = filters.grade.split(" (")[0];
-        if (filters.grade !== "All") {
-            for (let i of Object.keys(res)) {
-                if (res[i].metadata.grade.toString() !== filters.grade) {
-                    delete res[i];
-                }
-            }
-        }
+        // filters.grade = filters.grade.split(" (")[0];
+        // if (filters.grade !== "All") {
+        //     for (let i of Object.keys(res)) {
+        //         if (res[i].metadata.grade.toString() !== filters.grade) {
+        //             delete res[i];
+        //         }
+        //     }
+        // }
     
         // filter: skill
-        filters.skill = filters.skill.split(" (")[0];
-        if (filters.skill !== "All") {
+        // filters.skill = filters.skill.split(" (")[0];
+        // if (filters.skill !== "All") {
+        //     for (let i of Object.keys(res)) {
+        //         // metadata.skill is a list
+        //         if (!res[i].metadata.skills.includes(filters.skill)) {
+        //             delete res[i];
+        //         }
+        //     }
+        // }
+
+        // filter: Over sensitivity
+        filters.over = filters.over.split(" (")[0];
+        if (filters.over !== "All") {
             for (let i of Object.keys(res)) {
                 // metadata.skill is a list
-                if (!res[i].metadata.skills.includes(filters.skill)) {
+                if (!res[i].metadata.over.includes(filters.over)) {
                     delete res[i];
                 }
             }
