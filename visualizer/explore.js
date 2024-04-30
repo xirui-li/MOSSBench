@@ -17,7 +17,7 @@ let tasks = ["All", "figure question answering", "geometry problem solving", "ma
 let contexts = ["All", "abstract scene", "bar chart", "document image", "function plot", "geometry diagram", "heatmap chart", "line plot", "map chart", "medical image", "natural image", "pie chart", "puzzle test", "radar chart", "scatter plot", "scientific figure", "synthetic scene", "table", "violin plot", "word cloud"];
 let grades = ["All", "not applicable", "elementary school", "high school", "college"];
 let skills = ["All"];
-let over = ["type 1", "type 2", "type 3"];
+let over = ["All", "type 1", "type 2", "type 3"];
 
 // Variables for the filters with the number of questions
 // let number_options = [20, 50, 100, 200];  
@@ -126,7 +126,7 @@ function closeNav() {
 // Function: update the filter values
 function change_filters(e) {
     filters.source = document.getElementById("source-dd").value;
-    // filters.split = document.getElementById("split_dd").value;
+    filters.split = document.getElementById("split_dd").value;
     // filters.number = document.getElementById("number_dd").value;
     // filters.question_type = document.getElementById("question_type_dd").value;
     // filters.answer_type = document.getElementById("answer_type_dd").value;
@@ -406,17 +406,17 @@ async function filter_data() {
         }
 
         // filter: number
-        cnt = filters.number;
-        if (cnt != "All") {
-            cnt = Number.parseInt(cnt);
-            d = _.sample(res, Math.min(cnt, Object.keys(res).length));
+        // cnt = filters.number;
+        // if (cnt != "All") {
+        //     cnt = Number.parseInt(cnt);
+        //     d = _.sample(res, Math.min(cnt, Object.keys(res).length));
 
-        } else {
-            d = [];
-            for (let i of Object.keys(res)) {
-                d.push(res[i]);
-            }
-        }
+        // } else {
+        //     d = [];
+        //     for (let i of Object.keys(res)) {
+        //         d.push(res[i]);
+        //     }
+        // }
 
         // for (each of d) {
         //     console.log(d);
