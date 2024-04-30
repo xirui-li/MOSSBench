@@ -17,7 +17,7 @@ let tasks = ["All", "figure question answering", "geometry problem solving", "ma
 let contexts = ["All", "abstract scene", "bar chart", "document image", "function plot", "geometry diagram", "heatmap chart", "line plot", "map chart", "medical image", "natural image", "pie chart", "puzzle test", "radar chart", "scatter plot", "scientific figure", "synthetic scene", "table", "violin plot", "word cloud"];
 let grades = ["All", "not applicable", "elementary school", "high school", "college"];
 let skills = ["All"];
-let overtype = ["type 1", "type 2", "type 3"];
+let over = ["type 1", "type 2", "type 3"];
 
 // Variables for the filters with the number of questions
 // let number_options = [20, 50, 100, 200];  
@@ -52,7 +52,7 @@ let task_dd = make_dropdown("Choose a task:", tasks, "task_dd");
 let context_dd = make_dropdown("Choose a context:", contexts, "context_dd");
 let grade_dd = make_dropdown("Choose a grade:", grades, "grade_dd");
 let skill_dd = make_dropdown("Choose a skill:", skills, "skill_dd");
-let over_dd = make_dropdown("Choose a skill:", skills, "skill_dd");
+let over_dd = make_dropdown("Choose a over-sensitivity type:", over, "over_dd");
 
 // Content in the Option Box
 optboxes[0].innerHTML += number_dd;
