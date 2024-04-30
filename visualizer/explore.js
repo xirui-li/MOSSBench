@@ -8,16 +8,16 @@ DATA_FILE = "image_info.js"; // default, answers for testmini, no answer for tes
 
 // // Variables for the filters
 let number_options = [20, 50, 100, "All"];   
-let question_types = ["All", "free_form", "multi_choice"];
-let answer_types = ["All", "integer", "float", "list", "text"];
-let languages = ["All", "english", "chinese", "persian"];
-let sources = ["All", "A-OKVQA", "AI2D", "CLEVR-Math", "ChartQA", "DVQA", "DocVQA", "FigureQA", "FunctionQA", "GEOS", "GeoQA+", "Geometry3K", "IQTest", "IconQA", "KVQA", "MapQA", "PMC-VQA", "PaperQA", "ParsVQA-Caps", "PlotQA", "SciBench", "ScienceQA", "Super-CLEVR", "TQA", "TabMWP", "TextVQA", "TheoremQA", "UniGeo", "VQA-AS", "VQA-RAD", "VQA2.0", "VizWiz"];
-let categories = ["All", "general-vqa", "math-targeted-vqa"];
-let tasks = ["All", "figure question answering", "geometry problem solving", "math word problem", "textbook question answering", "visual question answering"];
-let contexts = ["All", "abstract scene", "bar chart", "document image", "function plot", "geometry diagram", "heatmap chart", "line plot", "map chart", "medical image", "natural image", "pie chart", "puzzle test", "radar chart", "scatter plot", "scientific figure", "synthetic scene", "table", "violin plot", "word cloud"];
-let grades = ["All", "not applicable", "elementary school", "high school", "college"];
-let skills = ["All"];
-let over = ["All", "type 1", "type 2", "type 3"];
+// let question_types = ["All", "free_form", "multi_choice"];
+// let answer_types = ["All", "integer", "float", "list", "text"];
+// let languages = ["All", "english", "chinese", "persian"];
+// let sources = ["All", "A-OKVQA", "AI2D", "CLEVR-Math", "ChartQA", "DVQA", "DocVQA", "FigureQA", "FunctionQA", "GEOS", "GeoQA+", "Geometry3K", "IQTest", "IconQA", "KVQA", "MapQA", "PMC-VQA", "PaperQA", "ParsVQA-Caps", "PlotQA", "SciBench", "ScienceQA", "Super-CLEVR", "TQA", "TabMWP", "TextVQA", "TheoremQA", "UniGeo", "VQA-AS", "VQA-RAD", "VQA2.0", "VizWiz"];
+// let categories = ["All", "general-vqa", "math-targeted-vqa"];
+// let tasks = ["All", "figure question answering", "geometry problem solving", "math word problem", "textbook question answering", "visual question answering"];
+// let contexts = ["All", "abstract scene", "bar chart", "document image", "function plot", "geometry diagram", "heatmap chart", "line plot", "map chart", "medical image", "natural image", "pie chart", "puzzle test", "radar chart", "scatter plot", "scientific figure", "synthetic scene", "table", "violin plot", "word cloud"];
+// let grades = ["All", "not applicable", "elementary school", "high school", "college"];
+// let skills = ["All"];
+let over_options = ["All", "type 1", "type 2", "type 3"];
 
 // Variables for the filters with the number of questions
 // let number_options = [20, 50, 100, 200];  
@@ -42,21 +42,21 @@ let filter_submit = document.getElementById("filter-submit");
 
 // Element Text the Option Panel
 let number_dd = make_dropdown("How many samples?", number_options, "number_dd");
-let split_dd = make_dropdown("Choose a split:", splits, "split_dd");
-let question_type_dd = make_dropdown("Choose a question type:", question_types, "question_type_dd");
-let answer_type_dd = make_dropdown("Choose an answer type:", answer_types, "answer_type_dd");
-let language_dd = make_dropdown("Choose a language:", languages, "language_dd");
-let source_dd = make_dropdown("Choose a source dataset:", sources, "source-dd");
-let category_dd = make_dropdown("Choose a category:", categories, "category_dd");
-let task_dd = make_dropdown("Choose a task:", tasks, "task_dd");
-let context_dd = make_dropdown("Choose a context:", contexts, "context_dd");
-let grade_dd = make_dropdown("Choose a grade:", grades, "grade_dd");
-let skill_dd = make_dropdown("Choose a skill:", skills, "skill_dd");
-let over_dd = make_dropdown("Choose a over-sensitivity type:", over, "over_dd");
+// let split_dd = make_dropdown("Choose a split:", splits, "split_dd");
+// let question_type_dd = make_dropdown("Choose a question type:", question_types, "question_type_dd");
+// let answer_type_dd = make_dropdown("Choose an answer type:", answer_types, "answer_type_dd");
+// let language_dd = make_dropdown("Choose a language:", languages, "language_dd");
+// let source_dd = make_dropdown("Choose a source dataset:", sources, "source-dd");
+// let category_dd = make_dropdown("Choose a category:", categories, "category_dd");
+// let task_dd = make_dropdown("Choose a task:", tasks, "task_dd");
+// let context_dd = make_dropdown("Choose a context:", contexts, "context_dd");
+// let grade_dd = make_dropdown("Choose a grade:", grades, "grade_dd");
+// let skill_dd = make_dropdown("Choose a skill:", skills, "skill_dd");
+let over_dd = make_dropdown("Choose a over-sensitivity type:", over_options, "over_dd");
 
 // Content in the Option Box
 optboxes[0].innerHTML += number_dd;
-optboxes[0].innerHTML += split_dd;
+// optboxes[0].innerHTML += split_dd;
 // optboxes[0].innerHTML += question_type_dd;
 // optboxes[0].innerHTML += answer_type_dd;
 // optboxes[0].innerHTML += language_dd;
@@ -125,9 +125,9 @@ function closeNav() {
 
 // Function: update the filter values
 function change_filters(e) {
-    filters.source = document.getElementById("source-dd").value;
-    filters.split = document.getElementById("split_dd").value;
-    // filters.number = document.getElementById("number_dd").value;
+    // filters.source = document.getElementById("source-dd").value;
+    // filters.split = document.getElementById("split_dd").value;
+    filters.number = document.getElementById("number_dd").value;
     // filters.question_type = document.getElementById("question_type_dd").value;
     // filters.answer_type = document.getElementById("answer_type_dd").value;
     // filters.language = document.getElementById("language_dd").value;
@@ -174,13 +174,13 @@ function create_number(data) {
         image = make_img(`${BASE_DIR}/${data.image}`);
 
     let choices = "";
-    if (data.question_type === "multi_choice")
-        choices = make_choices(data.choices);
+    // if (data.question_type === "multi_choice")
+    //     choices = make_choices(data.choices);
 
     // if data has the answer attr.
     let answer = "";
-    if ("answer" in data)
-        answer = make_answer(data.answer);
+    // if ("answer" in data)
+    //     answer = make_answer(data.answer);
 
     html = make_box([question, image, choices, answer]) + "<hr/>";
 
