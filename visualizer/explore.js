@@ -196,9 +196,13 @@ function make_qt(pid, question, unit) {
                 <p class="question-txt">[No.${pid}] ${question}</p>
         `;
     else
+        // html = `
+        //         <p><b>Question </b></p>
+        //         <p class="question-txt">[No.${pid}] ${question} (unit: ${unit})</p>
+        // `;
         html = `
-                <p><b>Question </b></p>
-                <p class="question-txt">[No.${pid}] ${question} (unit: ${unit})</p>
+        <p><b>Question </b></p>
+        <p class="question-txt">[No.${pid}] ${question}</p>
         `;
     return html;
 }
