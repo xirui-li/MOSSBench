@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Evaluating mathematical reasoning of foundation models in visual contexts">
-  <meta name="keywords" content="MathVista, Math Vista">
+        content="Is Your Multimodal Language Model Oversensitive to Safe Queries?">
+  <meta name="keywords" content="MOSSBench, MOSS Bench">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> MathVista: Evaluating Math Reasoning in Visual Contexts</title>
+  <title>MOSSBench: Is Your Multimodal Language Model Oversensitive to Safe Queries?</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -74,32 +74,17 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://chameleon-llm.github.io/">
-            <b>Chameleon</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+          <a class="navbar-item" href="https://ruocwang.github.io/">
+            <b>MoE</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
           </a>
-          <a class="navbar-item" href="https://scienceqa.github.io/">
-            <b>ScienceQA</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+          <a class="navbar-item" href="https://xirui-li.github.io/DrAttack/">
+            <b>DrAttack</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
           </a>
-          <a class="navbar-item" href="https://github.com/OpenGVLab/LLaMA-Adapter">
-            <b>LLaMA-Adapter (V2)</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+          <a class="navbar-item" href="https://ruocwang.github.io/">
+            <b>Negative Prompts</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
           </a>
-          <a class="navbar-item" href="https://promptpg.github.io/">
-            PromptPG
-          </a>
-          <a class="navbar-item" href="https://arxiv.org/abs/2307.10635">
-            SciBench
-          </a>
-          <a class="navbar-item" href="https://arxiv.org/abs/2305.12524">
-            TheoremQA
-          </a>
-          <a class="navbar-item" href="https://lila.apps.allenai.org/">
-            Lila
-          </a>
-          <a class="navbar-item" href="https://iconqa.github.io/">
-            IconQA
-          </a>
-          <a class="navbar-item" href="https://lupantech.github.io/inter-gps/">
-            Inter-GPS
+          <a class="navbar-item" href="https://ruocwang.github.io/">
+            MuLan
           </a>
         </div>
       </div>
@@ -115,50 +100,39 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title is-bold">
-            <img src="static/images/mathvista.png" style="width:1em;vertical-align: middle" alt="Logo"/>
-            <span class="mathvista" style="vertical-align: middle">MathVista</span>
+            <img src="static/images/psych.webp" style="width:1em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista" style="vertical-align: middle">MOSSBench</span>
             </h1>
           <h2 class="subtitle is-3 publication-subtitle">
-            Evaluating Math Reasoning in Visual Contexts
+            Is Your Multimodal Language Model Oversensitive to Safe Queries?
             <!-- <br> -->
             <!-- with GPT-4V, Bard, and Other Large Multimodal Models -->
           </h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://lupantech.github.io/">Pan Lu</a><sup style="color:#6fbf73;">1</sup>,</span>
+              <a href="https://lupantech.github.io/">Xirui Li</a><sup style="color:#6fbf73;">1</sup><sup>*</sup>,</span>
             <span class="author-block">
-              <a href="https://sites.google.com/view/hbansal">Hritik Bansal</a><sup style="color:#6fbf73;">1</sup>,</span>
+              <a href="https://dblp.org/pid/245/3568.html">Hengguang Zhou</a><sup style="color:#6fbf73;">1</sup><sup>*</sup>,</span>
             <span class="author-block">
-              <a href="https://tonyxia2001.github.io/">Tony Xia</a><sup style="color:#6fbf73;">1</sup>,
+              <a href="https://ruocwang.github.io/">Ruochen Wang</a><sup style="color:#6fbf73;">1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://liujch1998.github.io/">Jiacheng Liu</a><sup style="color:#ed4b82">2</sup>,
+              <a href="https://tianyizhou.github.io/">Tianyi Zhou</a><sup style="color:#ed4b82">2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://chunyuan.li/">Chunyuan Li</a><sup style="color:#ffac33">3</sup>,
+              <a href="https://cmhcbb.github.io/">Minhao Cheng</a><sup style="color:#ffac33">3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~hannaneh/">Hannaneh Hajishirzi</a><sup style="color:#ed4b82">2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://sites.google.com/site/hcheng2site/Home">Hao Cheng</a><sup style="color:#ffac33">3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a><sup style="color:#6fbf73;">1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.microsoft.com/en-us/research/people/mgalley/?from=https://research.microsoft.com/~mgalley&type=exact">Michel Galley</a><sup style="color:#ffac33">3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.microsoft.com/en-us/research/people/jfgao/">Jianfeng Gao</a><sup style="color:#ffac33">3</sup>
+              <a href="https://web.cs.ucla.edu/~chohsieh/">Cho-Jui Hsieh</a><sup style="color:#6fbf73;">1</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup style="color:#6fbf73;">1</sup>University of California, Los Angeles,</span><br>
-            <span class="author-block"><sup style="color:#ed4b82">2</sup>University of Washington,</span>
-            <span class="author-block"><sup style="color:#ffac33">3</sup>Microsoft Research</span><br>
-            <span class="paper-block"><b style="color:#f41c1c">ICLR 2024 Oral</b> (85 in 7304, 1.2%)</span>
+            <span class="author-block"><sup style="color:#ed4b82">2</sup>University of Maryland, College Park,</span>
+            <span class="author-block"><sup style="color:#ffac33">3</sup>Penn State</span><br>
+            <span class="author-block">* Equal contribution</span>
+            <!-- <span class="paper-block"><b style="color:#f41c1c">ICLR 2024 Oral</b> (85 in 7304, 1.2%)</span> -->
           </div>
         
           <!-- <section> -->
@@ -211,7 +185,7 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/lupantech/MathVista"
+                <a href="https://github.com/xirui-li/MOSSBench"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -221,7 +195,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://huggingface.co/datasets/AI4Math/MathVista"
+                <a href="https://huggingface.co/datasets/AIcell/MOSSBench"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <i class="far fa-images"></i> -->
@@ -233,7 +207,7 @@
               </span>
               <!-- Visualization Link. -->
               <span class="link-block">
-                <a href="https://mathvista.github.io/#visualization"
+                <a href="https://xirui-li.github.io/MOSSBench/#visualization"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <p style="font-size:18px">🔮</p>
@@ -243,7 +217,7 @@
               </span>
               <!-- Leaderboard Link. -->
               <span class="link-block">
-                <a href="https://mathvista.github.io/#leaderboard"
+                <a href="https://xirui-li.github.io/MOSSBench/#leaderboard"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <p style="font-size:18px">🏆</p>
@@ -253,7 +227,7 @@
               </span>
               <!-- Twitter Link. -->
               <span class="link-block">
-                <a href="https://twitter.com/lupantech/status/1717313355780964608"
+                <a href="https://x.com/xiruili7_li/status/1762996532926947659"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <i class="far fa-images"></i> -->
@@ -294,21 +268,20 @@
         <div id="results-carousel" class="carousel results-carousel">
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/tease_scores_version4_gemini.png" alt="geometric reasoning" width="84%"/>
-              <p> Accuracy scores of one leading LLM (i.e., PoT GPT-4), four primary LMMs, random chance, and human performance our proposed 
-              <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-              <span class="mathvista">MathVista</span>
-              across mathematical reasoning and visual context types. PoT refers to program-of-thought prompting, and PoT GPT-4 is a textual LLM augmented with the caption and OCR text. GPT-4V is manually evaluated via the playground chatbot. <b class="best-score-text" style="color: #C6011F"> The scores of Gemini Ultra are from the Gemini Team, Google.</b>
+              <img src="static/images/human_and_MLLM.png" alt="geometric reasoning" width="84%"/>
+              <p> MLLMs exhibit behaviors similar to human cognitive distortions, leading to <b class="best-score-text" style="color: #C6011F">oversensitive responses </b>where benign queries are perceived as harmful. We discover that oversenstivity prevails amount existing MLLMs on 
+              <img src="static/images/psych.webp" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+              <span class="mathvista">MOSSBench</span>
               </p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/tease_scores_gpt4v.png" alt="geometric reasoning" width="84%"/>
-              <p> Accuracy scores of one leading LLM (i.e., PoT GPT-4), four primary LMMs, random chance, and human performance our proposed 
-              <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-              <span class="mathvista">MathVista</span>
-              across mathematical reasoning and visual context types. PoT refers to program-of-thought prompting, and PoT GPT-4 is a textual LLM augmented with the caption and OCR text. GPT-4V is manually evaluated via the playground chatbot.
+              <img src="static/images/MOSSBench_compliance.png" alt="geometric reasoning" width="84%"/>
+              <p> Cpmpliance rate of SOTA MLLMs on 
+              <img src="static/images/psych.webp" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+              <span class="mathvista">MOSSBench</span>.
+              Proprietary MLLMs (e.g., Claude 3, Gemini) exhibits more oversensitive behaviors on our dataset.
               </p>
             </div>
           </div>
@@ -326,16 +299,21 @@
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-          <b>Large Language Models (LLMs)</b> and <b>Large Multimodal Models (LMMs)</b> exhibit impressive problem-solving skills in many tasks and domains, but their ability in mathematical reasoning in visual contexts has not been systematically studied.
+            Humans are prone to cognitive distortions — biased thinking patterns that lead to exaggerated responses to specific stimuli, albeit in very different contexts. This paper demonstrates that advanced <b>MLLMs</b> exhibit similar tendencies.
+            While these models are designed to respond queries under safety mechanism, they sometimes reject harmless queries in the presence of certain visual stimuli, disregarding the benign nature of their contexts.
           </p>
           <p>
-            To bridge this gap, we present <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="mathvista">MathVista</span>, a benchmark designed to combine challenges from diverse mathematical and visual tasks. It consists of <b>6,141 examples</b>, derived from <b>28 existing multimodal datasets</b> involving mathematics and <b>3 newly created datasets</b> (i.e., <b>IQTest, FunctionQA, and PaperQA</b>). Completing these tasks requires fine-grained, deep visual understanding and compositional reasoning, which all state-of-the-art foundation models find challenging. 
+            As the initial step in investigating this behavior, we identify three types of stimulus that trigger the oversensitivity of existing MLLMs: <strong><em>Exaggerated Risk</em></strong>, <strong><em>Negated Harm</em></strong>, and <strong><em>Counterintuitive Interpretation</em></strong>.
+            To systematically evaluate MLLMs' oversensitivity to these stimuli, we propose the <b>M</b>ultimodal <b>O</b>ver<b>S</b>en<b>S</b>itivity <b>B</b>enchmark <img src="static/images/psych.webp" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista">MOSSBench</span>. This toolkit consists of 300 manually collected benign multimodal queries, cross-verified by third-party reviewers (AMT).
           </p>
           <p>
-            With <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="mathvista">MathVista</span>, we have conducted <b>a comprehensive, quantitative evaluation of 12 prominent foundation models</b>. The best-performing <b>GPT-4V</b> model achieves an overall accuracy of <b>49.9%</b>, substantially outperforming Bard, the second-best performer, by <b>15.1%</b>. Our in-depth analysis reveals that the superiority of <b>GPT-4V</b> is mainly attributed to its enhanced visual perception and mathematical reasoning. However, <b>GPT-4V</b> still falls short of human performance by <b>10.4%</b>, as it often struggles to understand complex figures and perform rigorous reasoning. This significant gap underscores the critical role that <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="mathvista">MathVista</span> will play in the development of general-purpose AI agents capable of tackling mathematically intensive and visually rich real-world tasks. We further explore the new ability of <b>self-verification</b>, the use of <b>self-consistency</b>, and the  <b>goal-directed multi-turn human-AI dialogues</b>, highlighting the promising potential of GPT-4V for future research. 
+            Empirical studies using <img src="static/images/psych.webp" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista">MOSSBench</span> on 20 MLLMs reveal several insights:
+            (1). Oversensitivity is prevalent among SOTA MLLMs, with refusal rates reaching up to 76% for harmless queries.
+            (2). Safer models are more oversensitive: increasing safety may inadvertently raise caution and conservatism in the model's responses.
+            (3). Different types of stimuli tend to cause errors at specific stages — perception, intent reasoning, and safety decision-making — in the response process of MLLMs.
+            These findings highlight the need for refined safety mechanisms that balance caution with contextually appropriate responses, improving the reliability of MLLMs in real-world applications.
           </p>
         </div>
       </div>
@@ -1123,7 +1101,7 @@
           <br>
           <br>
           <div>
-          <p>🚨 To submit your results to the leaderboard, please send to <a href="mailto:lupantech@gmail.com">this email</a> with your result json files.</p>
+          <p>🚨 To submit your results to the leaderboard, please send to <a href="mailto:xiruili@g.ucla.edu">this email</a> with your result json files.</p>
           <p>🚨 For more submission details, please refer to <a href="https://github.com/lupantech/MathVista?tab=readme-ov-file#-leaderboard-">this link</a> and <a href="https://github.com/lupantech/MathVista?tab=readme-ov-file#-evaluations-on-mathvista">this link</a>.
           </p>
           </div>
@@ -1138,21 +1116,12 @@
 <!-- DATASET SECTION -->
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
-    <!-- <h1 class="title is-1 mathvista"><img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>MathVista Dataset</h1> -->
   <h1 class="title is-1 mathvista">
-    <img src="static/images/mathvista.png" style="width:1em;vertical-align: middle" alt="Logo"/>
-    <span class="mathvista" style="vertical-align: middle">MathVista Dataset</span>
+    <img src="static/images/psych.webp" style="width:1em;vertical-align: middle" alt="Logo"/>
+    <span class="mathvista" style="vertical-align: middle">MOSSBench Dataset</span>
   </h1>
   </div>
 </section>
-
-<!-- <section class="section">
-  <div class="container" style="margin-bottom: 2vh;">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Introduction</h2>
-        <div class="content has-text-justified">
-          <p> -->
             
 <section class="section">
   <div class="container">
@@ -1162,8 +1131,8 @@
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
           <p>
-            <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="mathvista">MathVista</span> is a consolidated Mathematical reasoning benchmark within
+            <img src="static/images/psych.webp" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista">MOSSBench</span> is a consolidated Mathematical reasoning benchmark within
             Visual contexts. It consists of <b>three newly created datasets, IQTest, FunctionQA, and PaperQA</b>, which address the missing visual domains and are tailored to evaluate logical reasoning on puzzle test figures,
             algebraic reasoning over functional plots, and scientific reasoning with academic paper figures, respectively. It also incorporates <b>9 MathQA datasets</b>
             and <b>19 VQA datasets</b> from the literature, which significantly enrich the diversity and complexity of
