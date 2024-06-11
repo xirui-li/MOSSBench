@@ -2,7 +2,7 @@
 // Data file
 
 // BASE_DIR = "../data";
-BASE_DIR = "https://raw.githubusercontent.com/xirui-li/OverBench/main/data"
+BASE_DIR = "https://raw.githubusercontent.com/xirui-li/MOSSBench/main/data"
 
 DATA_FILE = "image_info.js"; // default, answers for testmini, no answer for test
 
