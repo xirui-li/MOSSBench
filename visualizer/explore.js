@@ -17,6 +17,7 @@ let number_options = [20, 50, 100, "All"];
 // let contexts = ["All", "abstract scene", "bar chart", "document image", "function plot", "geometry diagram", "heatmap chart", "line plot", "map chart", "medical image", "natural image", "pie chart", "puzzle test", "radar chart", "scatter plot", "scientific figure", "synthetic scene", "table", "violin plot", "word cloud"];
 // let grades = ["All", "not applicable", "elementary school", "high school", "college"];
 // let skills = ["All"];
+
 let over_options = ["All", "type 1", "type 2", "type 3"];
 
 // Variables for the filters with the number of questions
