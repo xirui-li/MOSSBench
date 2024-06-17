@@ -1,5 +1,5 @@
 // let BASE_DIR = './data';
-let BASE_DIR = 'https://raw.githubusercontent.com/mathvista/data/main';
+let BASE_DIR = 'https://raw.githubusercontent.com/xirui-li/MOSSBench/main/data';
 
 function create_number(data) {
     let question = make_qt(data.question, data.unit);
