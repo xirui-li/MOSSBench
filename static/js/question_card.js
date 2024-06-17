@@ -10,16 +10,17 @@ function create_number(data) {
         // image = make_img(`${BASE_DImetadataR}/${filters.dataset}/${data.image}`);
         image = make_img(`${BASE_DIR}/${data.image}`);
 
-    let choices = "";
-    if (data.question_type === "multi_choice")
-        choices = make_choices(data.choices);
+    // let choices = "";
+    // if (data.question_type === "multi_choice")
+    //     choices = make_choices(data.choices);
 
-    // if data has the answer attr.
-    let answer = "";
-    if ("answer" in data)
-        answer = make_answer(data.answer);
+    // // if data has the answer attr.
+    // let answer = "";
+    // if ("answer" in data)
+    //     answer = make_answer(data.answer);
 
-    html = make_box([question, image, choices, answer]);
+    // html = make_box([question, image, choices, answer]);
+    html = make_box([question, image]);
 
     return html;
 }

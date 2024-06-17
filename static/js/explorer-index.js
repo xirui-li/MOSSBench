@@ -16,7 +16,7 @@ $(document).ready(function() {
         autoplaySpeed: 3000,
     }
 
-		// Initialize all div with carousel class
+	// Initialize all div with carousel class
     var carousels = bulmaCarousel.attach('.carousel', options);
 
     // Loop on each carousel initialized
@@ -47,11 +47,11 @@ $(document).ready(function() {
 
     // load and display default models
     let qids = getRandomSubarray(num_output_qs);
-    let [folder , output_data] = read_data('Gemini-pro 1.5');
+    let [folder , output_data] = read_data('Gemini-Pro 1.5');
     output_data.addEventListener('load', function() {
         refresh_table(qids);
     });
-    [folder , output_data] = read_data('Claude 3 opus');
+    [folder , output_data] = read_data('Claude 3 Opus');
     output_data.addEventListener('load', function() {
         refresh_table(qids);
     });
