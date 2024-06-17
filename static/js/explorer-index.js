@@ -47,11 +47,11 @@ $(document).ready(function() {
 
     // load and display default models
     let qids = getRandomSubarray(num_output_qs);
-    let [folder , output_data] = read_data('Multimodal Bard');
+    let [folder , output_data] = read_data('Gemini-pro 1.5');
     output_data.addEventListener('load', function() {
         refresh_table(qids);
     });
-    [folder , output_data] = read_data('CoT GPT4 (Caption+OCR)');
+    [folder , output_data] = read_data('Claude 3 opus');
     output_data.addEventListener('load', function() {
         refresh_table(qids);
     });
@@ -97,7 +97,7 @@ $(document).ready(function() {
 })
 
 var cache = {};
-var num_output_qs = 5;
+var num_output_qs = 3;
 // var 
 
 // dynamically links a js data file
@@ -115,7 +115,7 @@ function read_data(model_name) {
 function getRandomSubarray(size, arr=null) {
     if (arr == null) {
         arr = [];
-        for (let i = 1; i < 1001; i++) {
+        for (let i = 1; i < 301; i++) {
             arr.push(i);
         }
     }
