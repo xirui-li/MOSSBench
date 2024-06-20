@@ -28,6 +28,7 @@ function create_number(data) {
 // creates a div with question text in it
 function make_qt(question, unit) {
     let html = "";
+    let unit = null;
     if (unit === null)
         html = `
                 <p><b>Question </b></p>

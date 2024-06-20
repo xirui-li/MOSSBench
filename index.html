@@ -112,7 +112,7 @@
             <span class="author-block">
               <a href="https://lupantech.github.io/">Xirui Li</a><sup style="color:#6fbf73;">1</sup><sup>*</sup>,</span>
             <span class="author-block">
-              <a href="https://dblp.org/pid/245/3568.html">Hengguang Zhou</a><sup style="color:#6fbf73;">1</sup><sup>*</sup>,</span>
+              <a href="https://hengguangzhou.github.io/">Hengguang Zhou</a><sup style="color:#6fbf73;">1</sup><sup>*</sup>,</span>
             <span class="author-block">
               <a href="https://ruocwang.github.io/">Ruochen Wang</a><sup style="color:#6fbf73;">1</sup>,
             </span>
@@ -130,7 +130,7 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup style="color:#6fbf73;">1</sup>University of California, Los Angeles,</span><br>
             <span class="author-block"><sup style="color:#ed4b82">2</sup>University of Maryland, College Park,</span>
-            <span class="author-block"><sup style="color:#ffac33">3</sup>Penn State</span><br>
+            <span class="author-block"><sup style="color:#ffac33">3</sup>The Pennsylvania State University</span><br>
             <span class="author-block">* Equal contribution</span>
             <!-- <span class="paper-block"><b style="color:#f41c1c">ICLR 2024 Oral</b> (85 in 7304, 1.2%)</span> -->
           </div>
@@ -276,17 +276,12 @@
       <div class="column is-full has-text-centered content">
         <div class="box m-5">
           <div class="content has-text-centered">
-            <img src="static/images/human_and_MLLM.png" alt="geometric reasoning" width="42%"/>
-            <p>MLLMs exhibit behaviors similar to human cognitive distortions, leading to <b class="best-score-text" style="color: #C6011F">oversensitive responses</b> where benign queries are perceived as harmful. We discover that oversensitivity prevails among existing MLLMs on 
+            <img src="static/images/main_plot.png" alt="geometric reasoning" width="100%"/>
+            <p><b>(Left)</b> MLLMs exhibit behaviors similar to human cognitive distortions, leading to <b class="best-score-text" style="color: #C6011F">oversensitive responses</b> where benign queries are perceived as harmful. We discover that oversensitivity prevails among existing MLLMs on 
               <img src="static/images/psych.webp" style="width:1.0em; vertical-align: middle" alt="Logo"/>
-              <span class="mathvista">MOSSBench</span>
+              <span class="mathvista">MOSSBench</span>.
             </p>
-          </div>
-        </div>
-        <div class="box m-5">
-          <div class="content has-text-centered">
-            <img src="static/images/MOSSBench_compliance.png" alt="geometric reasoning" width="84%"/>
-            <p>Compliance rate of SOTA MLLMs on 
+            <p><b>(Right)</b> Compliance rate of SOTA MLLMs on 
               <img src="static/images/psych.webp" style="width:1.0em; vertical-align: middle" alt="Logo"/>
               <span class="mathvista">MOSSBench</span>. Proprietary MLLMs (e.g., Claude 3, Gemini) exhibit more oversensitive behaviors on our dataset.
             </p>
@@ -352,7 +347,7 @@
           <div id="results-carousel" class="carousel results-carousel">
             <div class="box m-5">
               <div class="content has-text-centered">
-                <img src="static/images/exaggerated_risk.png" alt="algebraic reasoning" width="50%"/>
+                <img src="static/images/exaggerated_risk.png" alt="algebraic reasoning" width="40%"/>
                 <p> 
                   Images in the wild, especially those with high resolution, are often rich in visual information. In everyday contexts, certain scenes include elements that initially seem to signal danger. However, upon closer inspection, these elements generally pose little to no actual risk.
                   Such a scenario frequently occurs in everyday life. MLLMs frequently refuse to process user requests involving these images, drastically overestimating their risk.
@@ -364,7 +359,7 @@
             </div>
             <div class="box m-5">
               <div class="content has-text-centered">
-                <img src="static/images/negated_harm.png" alt="arithmetic reasoning" width="50%"/>
+                <img src="static/images/negated_harm.png" alt="arithmetic reasoning" width="40%"/>
                 <p> 
                   The second scenario, which we term <strong><em>Negated Harm</em></strong>, involves images where harmful objects or behaviors are present, but the overall context of the image actively opposes them.
                   This image depicts a prohibition sign over a scene where a man is physically threatening a woman.
@@ -376,7 +371,7 @@
             </div>
             <div class="box m-5">
               <div class="content has-text-centered">
-                <img src="static/images/counterintuitive_interpretation.png" alt="arithmetic reasoning" width="50%"/>
+                <img src="static/images/counterintuitive_interpretation.png" alt="arithmetic reasoning" width="40%"/>
                 <p> 
                   The image features a girl holding a colorful parrot in a whimsical, fairy-tale setting.
                   The user inquires whether it is safe to put it in a cage.
@@ -431,7 +426,7 @@
     <div class="columns is-centered">
       <div class="column" style="margin-right: -20rem;">
         <div class="content has-text-centered">
-          <img src="static/images/statistic.png" alt="data-overview" style="max-width: 50%;"/>
+          <img src="static/images/statistic.png" alt="data-overview" style="max-width: 40%;"/>
           <p> 
             Key statistics of <img src="static/images/psych.webp" style="width:1.0em;vertical-align: middle" alt="Logo"/>
             <span class="mathvista">MOSSBench</span>.<br/>
@@ -440,7 +435,7 @@
       </div>
       <div class="column">
         <div class="content has-text-centered">
-          <img src="static/images/harm_type.png" alt="data-composition" style="max-width: 40%;"/>
+          <img src="static/images/harm_type.png" alt="data-composition" style="max-width: 30%;"/>
           <p>
             Distribution of <img src="static/images/psych.webp" style="width:1.0em;vertical-align: middle" alt="Logo"/>
             <span class="mathvista">MOSSBench</span>.<br/>
@@ -452,7 +447,7 @@
     <div class="columns is-centered m-6">
       <div class="column is-max-desktop has-text-centered">
         <h2 class="title is-3" id="visualization">Visualization</h2>
-        <iframe src="visualizer/explore.html" style="width: 100%;min-height: 100vh; border-radius: 20px;"></iframe>
+        <iframe src="visualizer/explore.html" style="width: 100%;min-height: 50vh; border-radius: 20px;"></iframe>
       </div>
     </div>
   </div>
@@ -541,76 +536,23 @@
 
     <div class="columns is-centered m-6">
       <div class="column is-full has-text-centered content">
-        <h2 class="title is-3">Response Stages Examples</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/Gemini_safety-critical_misperception.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <!-- <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/safety_critical_misperception.png" alt="" width="60%"/>
-            </div>
-          </div> -->
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/safety_critical_misperception_2.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/location_1.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/location_2.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/location_3.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/location_4.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/location_5.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/location_6.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/location_7.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/location_8.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/location_9.png" alt="" width="60%"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered m-6">
-      <div class="column is-full has-text-centered content">
         <h2 class="title is-3">Cognitive Distortion in MLLMs Examples</h2>
         <div id="results-carousel" class="carousel results-carousel">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/results-examples/moralizing.png" alt="" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/results-examples/moralizing_2.png" alt="" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/results-examples/moralizing_3.png" alt="" width="60%"/>
+            </div>
+          </div>
           <div class="box m-5">
             <div class="content has-text-centered">
               <img src="static/images/results-examples/Catastrophizing.png" alt="" width="60%"/>
@@ -629,21 +571,6 @@
           <div class="box m-5">
             <div class="content has-text-centered">
               <img src="static/images/results-examples/mental_filtering_2.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/moralizing.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/moralizing_2.png" alt="" width="60%"/>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-examples/moralizing_3.png" alt="" width="60%"/>
             </div>
           </div>
         </div>
@@ -752,7 +679,9 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is website adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
+            This website is website adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mathvista.github.io/">MathVista</a>. 
+          </p>  
+          <p>Licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
