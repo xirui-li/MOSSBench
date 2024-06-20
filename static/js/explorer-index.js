@@ -97,7 +97,7 @@ $(document).ready(function() {
 })
 
 var cache = {};
-var num_output_qs = 1;
+var num_output_qs = 3;
 // var 
 
 // dynamically links a js data file
