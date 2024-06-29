@@ -18,7 +18,7 @@ let number_options = [20, 50, 100, "All"];
 // let grades = ["All", "not applicable", "elementary school", "high school", "college"];
 // let skills = ["All"];
 
-let over_options = ["All", "type 1", "type 2", "type 3"];
+let over_options = ["All", "Exaggerated Risk", "Negated Harm", "Counterintuitive Interpretation"];
 
 // Variables for the filters with the number of questions
 // let number_options = [20, 50, 100, 200];  
