@@ -127,15 +127,15 @@ Examples of 3 types of **oversensitivity stimuli**:
 
 1. Exaggerated Risk
 
-<img src="https://raw.githubusercontent.com/turningpoint-ai/MOSSBench/main/websites/static/images/results-examples/Exaggerated.png" style="zoom:40%;" />
+<img src="website/static/images/results-examples/Exaggerated.png" style="zoom:40%;" />
 
 2. Negated Harm
 
-<img src="https://raw.githubusercontent.com/turningpoint-ai/MOSSBench/main/websites/static/images/results-examples/Negated.png" style="zoom:40%;" />
+<img src="website/static/images/results-examples/Negated.png" style="zoom:40%;" />
 
 3. Counterintuitive Interpretation
 
-<img src="https://raw.githubusercontent.com/turningpoint-ai/MOSSBench/main/websites/static/images/results-examples/Counterintuitive.png" style="zoom:40%;" />
+<img src="website/static/images/results-examples/Counterintuitive.png" style="zoom:40%;" />
 
 
 ## 📖 Dataset Usage
