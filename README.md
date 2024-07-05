@@ -26,20 +26,18 @@ For more details, please refer to the project page with dataset exploration and 
 - [💥 News 💥](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#-news-)
 - [👀 About MOSSBench](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#-about-mossbench)
 - [🏆 Leaderboard 🏆](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#-leaderboard-)
-  - [Contributing the Leaderboard](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#contributing-the-leaderboard)
+- [Contributing the Leaderboard](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#contributing-the-leaderboard)
 - [📊 Dataset Examples](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#-dataset-examples)
 - [📖 Dataset Usage](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#-dataset-usage)
   - [Data Downloading](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#data-downloading)
   - [Data Format](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#data-format)
   - [Data Visualization](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#data-visualization)
-  - [Usage Demos](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#usage-demos)
 - [🔮 Evaluations on MOSSBench](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#-evaluations-on-mathvista)
-  - [Requirements (Optional)](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#requirements-optional)
-  - [Downloading Images (Optional)](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#downloading-images-optional)
+  - [Requirements](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#requirements)
   - [Evaluation Pipelines](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#evaluation-pipelines)
 - [📜 License](https://github.com/turningpoint-ai/MOSSBench/README.md#-license)
 - [☕ Stay Connected!](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#coffee-stay-connected)
-- [✅ Cite](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#white_check_mark-cite)
+- [✅ Cite](https://github.com/turningpoint-ai/MOSSBench/blob/main/README.md#-cite)
 
 
 
@@ -195,18 +193,6 @@ Install the Python dependencies if you would like to reproduce our results for C
 ```sh
 pip install -r requirements.txt
 ```
-
-### Downloading Images (Optional)
-
-We provide images in the JPG format. You can download and unzip them using the following commands:
-
-```sh
-cd data
-wget https://huggingface.co/datasets/AIcell/MOSSBench/resolve/main/images.zip
-unzip images.zip && rm images.zip
-```
-
-This step might be optional if you prefer to use the Hugging Face format of the data.
 
 ### Evaluation Pipelines
 
