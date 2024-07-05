@@ -127,15 +127,15 @@ Examples of 3 types of **oversensitivity stimuli**:
 
 1. Exaggerated Risk
 
-<img src="website/static/images/results-examples/Exaggerated.png" style="zoom:40%;" />
+<img src="website/static/images/results-examples/Exaggerated.png" style="zoom:20%;" />
 
 2. Negated Harm
 
-<img src="website/static/images/results-examples/Negated.png" style="zoom:40%;" />
+<img src="website/static/images/results-examples/Negated.png" style="zoom:20%;" />
 
 3. Counterintuitive Interpretation
 
-<img src="website/static/images/results-examples/Counterintuitive.png" style="zoom:40%;" />
+<img src="website/static/images/results-examples/Counterintuitive.png" style="zoom:20%;" />
 
 
 ## 📖 Dataset Usage
