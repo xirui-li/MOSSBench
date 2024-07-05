@@ -116,8 +116,6 @@ To submit your results to the leaderboard, please send to [this email](mailto:xi
 | 18     | **MiniCPM-Llama3-V 2.5**                        | Open-source MLLMs                   | 2024-06-22 | **6** | 8    | 5    | 5    |
 | 19     | **GPT-4o**                        | Proprietary MLLMs - Web version                   | 2024-06-22 | **4** | 6    | 2    | 4    |
 
-🔔 The automatic evaluation on [CodaLab](https://codalab.org/) are under construction. 
-
 
 ## 📊 Dataset Examples
 
@@ -233,7 +231,7 @@ bash run_instructblip.sh
 
 The new contributions to our dataset are distributed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license, including
 
-- The creation of three dataset: IQTest, FunctionQA, and Paper;
+- The creation of contrasting and oversensitivity dataset: IQTest, FunctionQA, and Paper;
 - The filtering and cleaning of source datasets;
 - The standard formalization of instances for evaluation purposes;
 - The annotations of metadata.
@@ -243,7 +241,7 @@ The new contributions to our dataset are distributed under the [CC BY-SA 4.0](ht
 
 ## :coffee: Stay Connected!
 
-Fantastic! We are always open to engaging discussions, collaborations, or even just sharing a virtual coffee. To get in touch or join our team, visit [TurningPoint AI](https://www.turningpoint-ai.com/)'s homepage for contact information.
+We are always open to engaging discussions, collaborations, or even just sharing a virtual coffee. To get in touch or join our team, visit [TurningPoint AI](https://www.turningpoint-ai.com/)'s homepage for contact information.
 
 
 ## :white_check_mark: Cite
