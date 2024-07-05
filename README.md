@@ -188,7 +188,7 @@ The dataset is provided in json format and contains the following attributes:
 
 ## 🔮 Evaluations on MOSSBench
 
-### Requirements (Optional)
+### Requirements
 
 Install the Python dependencies if you would like to reproduce our results for ChatGPT, GPT-4, Claude-2, and Bard:
 
