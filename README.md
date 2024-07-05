@@ -225,12 +225,11 @@ and ```openai_keys```.
 ##### For open-source MLLMs
 Download your model or get their names for Huggingface. And replace the following path by where you locate your models or your models name.
 
-```
+```sh
 
 # Initialize variables
 MODEL_NAME="your_path_to/idefics-9b-instruct" # you can replace it by direct naming
 DATA_DIR=""
-
 ```
 
 
@@ -238,7 +237,7 @@ DATA_DIR=""
 Next, run ```experiments/main.py``` file in folder or excute the ```.sh``` files we provide for evaluation by 
 
 
-```
+```sh
 cd experiments/scripts
 
 bash run_instructblip.sh
