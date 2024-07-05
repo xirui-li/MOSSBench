@@ -1,0 +1,17 @@
+transformers>=4.34.0
+protobuf>=3.20.0
+sentencepiece
+datasets>=2.16.1
+torch>=2.0
+openai>=1.0.0
+numpy
+pandas
+accelerate
+fschat==0.2.34
+jsonlines
+google-generativeai
+anthropic
+ml-collections
+einops 
+transformers_stream_generator
+sentencepiece
