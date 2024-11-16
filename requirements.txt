@@ -16,3 +16,4 @@ einops
 transformers_stream_generator
 sentencepiece
 pillow
+torchvision
