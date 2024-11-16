@@ -19,3 +19,4 @@ pillow
 torchvision
 opencv-python
 reka-api
+matplotlib
