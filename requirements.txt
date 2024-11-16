@@ -17,4 +17,4 @@ transformers_stream_generator
 sentencepiece
 pillow
 torchvision
-cv2
+opencv-python
